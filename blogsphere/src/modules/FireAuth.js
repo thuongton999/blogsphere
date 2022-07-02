@@ -51,9 +51,12 @@ async function logOut() {
         return querySuccessful(false, "", errorCode, errorMessage);
     }
 }
-async function verifyEmail(user) {
+async function sendVerificationEmail(user) {
     if (user.emailVerified) return querySuccessful(true, user);
     return await sendEmailVerification(user);
 }
+async function verifyEmail(user) {
 
-export { logInWithEmailAndPassword, registerWithEmailAndPassword, verifyEmail, logOut };
+}
+
+export { logInWithEmailAndPassword, registerWithEmailAndPassword, sendEmailVerification, verifyEmail, logOut };

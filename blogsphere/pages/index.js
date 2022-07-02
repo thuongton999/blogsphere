@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { 
-  registerWithEmailAndPassword,
-  logOut, 
-  logInWithEmailAndPassword} 
+  registerWithEmailAndPassword, 
+  logInWithEmailAndPassword,
+  logOut } 
   from "../src/modules/FireAuth";
 
 export default function Home() {
