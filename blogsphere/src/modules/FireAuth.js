@@ -58,5 +58,15 @@ async function sendVerificationEmail(user) {
 async function verifyEmail(user) {
 
 }
+function isLoggedIn() {
+    return !!auth.currentUser;
+}
 
-export { logInWithEmailAndPassword, registerWithEmailAndPassword, sendEmailVerification, verifyEmail, logOut };
+export { 
+    logInWithEmailAndPassword, 
+    registerWithEmailAndPassword, 
+    sendEmailVerification, 
+    verifyEmail, 
+    logOut,
+    isLoggedIn,
+};
