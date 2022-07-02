@@ -33,6 +33,7 @@ async function logInWithEmailAndPassword(email, password) {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         // Signed in
         const user = userCredential.user;
+        return querySuccessful(true, user);
     } catch(error) {
         const errorCode = error.code;
         const errorMessage = error.message;
@@ -56,7 +57,6 @@ async function sendVerificationEmail(user) {
     return await sendEmailVerification(user);
 }
 async function verifyEmail(user) {
-
 }
 function isLoggedIn() {
     return !!auth.currentUser;

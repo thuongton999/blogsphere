@@ -10,12 +10,18 @@ body {
 }
 :root {
   font-family: 'Kodchasan', sans-serif;
-  --primary-color: #1E252B;
-  --secondary-color: #262D34;
-  --text-color: #ECEFF4;
-  --event-color: #5E81AC;
-  color: var(--text-color);
-  background-color: var(--primary-color);
+  --nord0: #2E3440;
+  --nord1: #3B4252;
+  --nord2: #434C5E;
+  --nord3: #4C566A;
+  --text0: #ECEFF4;
+  --text1: #E5E9F0;
+  --text2: #D8DEE9;
+  --frost2: #5E81AC;
+  --frost1: #81A1C1;
+  --frost0: #88C0D0;
+  color: var(--text0);
+  background-color: var(--nord0);
 }
 
 a {
@@ -25,28 +31,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-.primary-color {
-  color: var(--primary-color);
-}
-.secondary-color {
-  color: var(--secondary-color);
-}
-.text-color {
-  color: var(--text-color);
-}
-.event-color {
-  color: var(--event-color);
-}
-.primary-color-bg {
-  background-color: var(--primary-color);
-}
-.secondary-color-bg {
-  background-color: var(--secondary-color);
-}
-.text-color-bg {
-  background-color: var(--text-color);
-}
-.event-color-bg {
-  background-color: var(--event-color);
 }

@@ -1,0 +1,19 @@
+import { useEffect } from "react"
+
+export default function Modal({ children, active, onActivate, onDeactivate }) {
+    useEffect(() => {
+        if (active && onActivate === "function") {
+            onActivate();
+            return;
+        }
+        if (typeof onDeactivate !== "function") return;
+        onDeactivate();
+    }, [active, onActivate, onDeactivate]);
+    return (
+        <div className="fixed inset-0 flex justify-center items-center backdrop-blur p-8">
+            <div className="secondary-color-bg h-fit p-8 rounded-lg">
+                {children}
+            </div>
+        </div>
+    )
+}

@@ -6,9 +6,9 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Start " />
+        <meta name="description" content="Consectetur tempor nostrud quis deserunt veniam ea est ullamco amet." />
         <meta name="keywords" content="HTML, CSS, JavaScript" />
-        <meta name="author" content="John Doe" />
+        <meta name="author" content="Group 9 FCTC Hackathon" />
         <title>Home</title>
       </Head>
       <Component {...pageProps} />
