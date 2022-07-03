@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Modal from "../src/components/Modal";
-import { 
-  registerWithEmailAndPassword, 
+import {
+  registerWithEmailAndPassword,
   logInWithEmailAndPassword,
-  logOut } 
-  from "../src/modules/FireAuth";
+  logOut
+} from "../src/modules/FireAuth";
 
 export default function Home() {
   const [query, setQuery] = useState();
@@ -31,16 +31,16 @@ export default function Home() {
 
   return (
     <>
-      Tempor voluptate ex qui in amet irure et ex eiusmod irure sunt. Occaecat dolore qui in do tempor esse consectetur tempor esse duis. Voluptate laborum laborum pariatur labore id exercitation id est duis voluptate qui et. Consequat consequat consectetur dolore proident labore. Cillum ipsum aute sint consequat. Consequat do aliqua ipsum pariatur proident ut voluptate voluptate. Incididunt occaecat sit deserunt laborum consectetur voluptate nostrud pariatur sint incididunt reprehenderit.
-
-      Aute laborum incididunt velit in duis est enim magna laboris. Fugiat pariatur consectetur cupidatat consectetur ullamco ea occaecat sint nisi veniam. Quis reprehenderit ut id minim veniam et. Ad dolore dolore et non incididunt cupidatat officia ex consequat qui ex velit sint anim. Aliquip ipsum magna voluptate ea velit laboris cupidatat aute eiusmod do nisi. Nulla ut duis pariatur in elit et tempor in culpa ex.
+      <button onClick={register}>Register</button>
+      <button onClick={signin}>Login</button>
+      <button onClick={signout}>Logout</button>
+      <br />{query}
+      <br />
+      <br />{user}
       <Modal>
-        <button onClick={register}>Register</button>
-        <button onClick={signin}>Login</button>
-        <button onClick={signout}>Logout</button>
-        <br/>{query}
-        <br/>
-        <br/>{user}
+        Ad irure officia deserunt nisi Lorem duis culpa labore eiusmod amet ad anim ea. Ut in veniam esse in non consequat ullamco cillum pariatur Lorem. Voluptate labore est ea elit eu excepteur cupidatat pariatur labore commodo. Lorem nisi amet laborum nisi in et quis labore cupidatat anim eu ad ullamco. Quis laboris adipisicing velit duis ullamco aute aute duis adipisicing ullamco. Aliqua voluptate quis eiusmod amet consectetur nulla nisi. Culpa anim nulla consequat voluptate quis eiusmod qui tempor.
+
+        Occaecat labore occaecat nulla occaecat minim laborum ut et dolore ea. Mollit cupidatat ex ex non tempor consequat tempor irure eiusmod nostrud sint exercitation. Duis proident eiusmod aute sunt magna cupidatat cupidatat laborum proident eiusmod ut officia tempor. Culpa id duis culpa in consequat laboris magna nostrud.
       </Modal>
     </>
   )
